@@ -1,0 +1,46 @@
+<!--
+  SJ ONE — Equipment(장비) 개요 페이지 (코드위젯용, self-contained)
+  사용: 상단 Equipment(/21) 페이지에 코드위젯 추가 → 통째로 붙여넣기.
+  각 카드 클릭 시 해당 카테고리 페이지로 이동.
+-->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+<div class="sjov">
+  <style>
+    .sjov{ max-width:1140px; margin:0 auto; padding:72px 24px; color:#555; font-family:"Noto Sans KR","Malgun Gothic",sans-serif; }
+    .sjov *{ box-sizing:border-box; }
+    .sjov .head{ text-align:center; margin:0 0 44px; }
+    .sjov .eyebrow{ color:#e54a35; font-weight:700; font-size:13px; letter-spacing:1.5px; text-transform:uppercase; margin:0 0 10px; }
+    .sjov h2{ color:#081b33; font-size:32px; font-weight:700; margin:0 0 14px; }
+    .sjov .lead{ font-size:15px; line-height:1.7; max-width:640px; margin:0 auto; color:#555; }
+    .sjov .grid{ display:grid; grid-template-columns:repeat(auto-fill,minmax(270px,1fr)); gap:24px; }
+    .sjov a.card{ border:1px solid #ddd; text-decoration:none; display:block; background:#fff; transition:box-shadow .15s; }
+    .sjov a.card:hover{ box-shadow:0 8px 24px rgba(8,27,51,.12); }
+    .sjov .card .imgwrap{ background:#f6f7f9; aspect-ratio:4/3; display:flex; align-items:center; justify-content:center; padding:22px; border-bottom:1px solid #eee; }
+    .sjov .card img{ max-width:100%; max-height:100%; object-fit:contain; display:block; }
+    .sjov .card .t{ padding:18px 20px 22px; }
+    .sjov .card .t b{ color:#081b33; font-size:17px; display:block; margin:0 0 3px; }
+    .sjov .card .t .en{ color:#999; font-size:12.5px; font-weight:400; }
+    .sjov .card .t p{ color:#555; font-size:13.5px; line-height:1.55; margin:10px 0 0; }
+  </style>
+
+  <div class="head">
+    <p class="eyebrow">Equipment</p>
+    <h2>시편 가공 장비</h2>
+    <p class="lead">절단부터 마운팅, 연삭·폴리싱까지 — 시편 전처리 전 공정에 필요한 장비 라인업입니다.</p>
+  </div>
+
+  <div class="grid">
+    <a class="card" href="/23">
+      <div class="imgwrap"><img src="https://cdn.imweb.me/upload/S20260901aae7e30157e81/e4f98836a5152.png" alt="절단기"></div>
+      <div class="t"><b>절단기 <span class="en">Cutting Machine</span></b><p>저속·고속정밀·대형 절단기 라인업</p></div>
+    </a>
+    <a class="card" href="/24">
+      <div class="imgwrap"><img src="https://cdn.imweb.me/upload/S20260901aae7e30157e81/0c69fbf87553a.png" alt="마운팅프레스"></div>
+      <div class="t"><b>마운팅프레스 <span class="en">Mounting Machine</span></b><p>열간 마운팅프레스 · 진공함침기</p></div>
+    </a>
+    <a class="card" href="/25">
+      <div class="imgwrap"><img src="https://cdn.imweb.me/upload/S20260901aae7e30157e81/385edde4a9d0b.png" alt="그라인더/폴리셔"></div>
+      <div class="t"><b>그라인더 / 폴리셔 <span class="en">Grinder / Polisher</span></b><p>자동 · 반자동 · 수동 연삭·폴리싱 장비</p></div>
+    </a>
+  </div>
+</div>

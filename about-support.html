@@ -1,0 +1,62 @@
+<!--
+  SJ ONE — About + Support 통합 페이지 (코드위젯용, self-contained)
+  구성: 미션 → 회사 개요 → 문의(연락처) → 오시는 길
+  사용: 배너 섹션(네이비 #081b33 + 겹치기 헤더) 아래, 흰 배경 섹션 코드위젯에 통째로 붙여넣기.
+  ※ 자체 스타일 내장(.sjpage 스코프) — 글로벌 CSS 없어도 동작. 실사이트에서만 렌더됨.
+-->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+<div class="sjpage">
+  <style>
+    .sjpage{ font-family:"Noto Sans KR","Malgun Gothic",sans-serif; color:#555; max-width:860px; margin:0 auto; padding:0 24px; }
+    .sjpage *{ box-sizing:border-box; }
+    .sjpage .mission{ text-align:center; padding:64px 0 40px; }
+    .sjpage .mission .brand{ font-size:24px; font-weight:700; color:#081b33; letter-spacing:1px; margin:0 0 22px; }
+    .sjpage .mission .stmt{ font-size:19px; line-height:1.85; color:#1d1d1d; font-weight:500; margin:0 auto 16px; max-width:720px; }
+    .sjpage .mission .en{ font-size:14px; color:#999; line-height:1.7; font-weight:400; max-width:720px; margin:0 auto; }
+    .sjpage h3{ font-size:22px; color:#081b33; font-weight:600; margin:52px 0 20px; padding-bottom:10px; border-bottom:2px solid #081b33; }
+    .sjpage table.info{ width:100%; border-collapse:collapse; font-size:15px; }
+    .sjpage table.info th{ text-align:left; width:140px; color:#1d1d1d; font-weight:600; padding:13px 0; vertical-align:top; border-bottom:1px solid #ddd; }
+    .sjpage table.info td{ color:#555; padding:13px 0; border-bottom:1px solid #ddd; }
+    .sjpage table.info a{ color:#081b33; }
+    .sjpage .cgrid{ display:grid; grid-template-columns:repeat(3,1fr); gap:20px; margin:22px 0 8px; }
+    .sjpage .ccard{ border:1px solid #ddd; padding:28px 20px; text-align:center; }
+    .sjpage .ccard .lbl{ font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase; color:#e54a35; margin:0 0 12px; }
+    .sjpage .ccard .val{ font-size:17px; color:#081b33; font-weight:600; word-break:break-all; margin:0; }
+    .sjpage .ccard a{ color:#081b33; text-decoration:none; }
+    .sjpage .ccard a:hover{ text-decoration:underline; }
+    .sjpage .map{ width:100%; height:360px; border:1px solid #ddd; margin:24px 0 72px; }
+    @media(max-width:600px){ .sjpage .cgrid{ grid-template-columns:1fr; } .sjpage .mission .stmt{ font-size:17px; } }
+  </style>
+
+  <!-- 미션 -->
+  <div class="mission">
+    <p class="brand">SJ ONE Trading</p>
+    <p class="stmt">당사는 우수한 고객 서비스를 제공하기 위해, 고객이 만족할 수 있는 품질의 제품을 높은 가성비로 필요한 시점에 공급하는 것을 목표로 하고 있습니다.</p>
+    <p class="en">Our business model is simple: to provide our customers with great customer service, quick delivery and excellent products at competitive prices.</p>
+  </div>
+
+  <!-- 회사 개요 -->
+  <h3>회사 개요</h3>
+  <table class="info">
+    <tr><th>상호명</th><td>에스제이원트레이딩 주식회사</td></tr>
+    <tr><th>대표자</th><td>김종한</td></tr>
+    <tr><th>사업자등록번호</th><td>367-86-03409</td></tr>
+    <tr><th>주소</th><td>서울특별시 강동구 올림픽로 664 (천호동, 대우한강베네시티) 102동 705호 (05328)</td></tr>
+  </table>
+
+  <!-- 문의 -->
+  <h3>문의</h3>
+  <p>시편 가공 장비 및 소모품 관련 문의는 아래 연락처로 연락 주시면 신속히 안내해 드리겠습니다.</p>
+  <div class="cgrid">
+    <div class="ccard"><p class="lbl">Tel</p><p class="val"><a href="tel:0220419770">02-2041-9770</a></p></div>
+    <div class="ccard"><p class="lbl">Fax</p><p class="val">02-2041-9772</p></div>
+    <div class="ccard"><p class="lbl">E-mail</p><p class="val"><a href="mailto:sjone@sjtrade.co.kr">sjone@sjtrade.co.kr</a></p></div>
+  </div>
+
+  <!-- 오시는 길 -->
+  <h3>오시는 길</h3>
+  <iframe class="map"
+    src="https://maps.google.com/maps?q=%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%8F%99%EA%B5%AC%20%EC%98%AC%EB%A6%BC%ED%94%BD%EB%A1%9C%20664&z=16&output=embed"
+    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</div>
