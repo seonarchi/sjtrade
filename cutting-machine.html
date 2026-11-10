@@ -11,10 +11,8 @@
     /* 이미지 없는 모델 2개를 좌우로 나란히 (예: CF120 · CF150) */
     .sj-cat .sj-pair { display: grid; grid-template-columns: 1fr 1fr; align-items: stretch; }
     .sj-cat .sj-pair .sj-model { border-bottom: 1px solid var(--sj-border); }
-    .sj-cat .sj-pair .sj-model:last-child { border-left: 1px solid var(--sj-border); }
     @media (max-width: 720px) {
       .sj-cat .sj-pair { grid-template-columns: 1fr; }
-      .sj-cat .sj-pair .sj-model:last-child { border-left: none; }
     }
   </style>
 
