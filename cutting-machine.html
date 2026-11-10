@@ -14,6 +14,15 @@
     @media (max-width: 720px) {
       .sj-cat .sj-pair { grid-template-columns: 1fr; }
     }
+    /* 영상 1개 + 표 2개 좌우 (제목·영상 공유, 표마다 소제목) */
+    .sj-cat .sj-combo { padding: 56px 24px; border-bottom: 1px solid var(--sj-border); }
+    .sj-cat .sj-combo > .series { color: var(--sj-accent); font-weight: 700; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; margin: 0 0 6px; }
+    .sj-cat .sj-combo > h3 { font-weight: 600; font-size: 26px; color: var(--sj-navy); margin: 0 0 14px; }
+    .sj-cat .sj-combo > .sj-model-video { max-width: 620px; }
+    .sj-cat .sj-combo .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 0 44px; margin-top: 10px; }
+    .sj-cat .sj-combo .cols h4 { font-size: 16px; color: var(--sj-navy); font-weight: 700; margin: 0 0 6px; }
+    .sj-cat .sj-combo .cols .sj-spec { margin-bottom: 0; }
+    @media (max-width: 720px) { .sj-cat .sj-combo .cols { grid-template-columns: 1fr; gap: 0; } }
   </style>
 
   <!-- 서브 탭 -->
@@ -241,46 +250,42 @@
       </div>
     </div>
 
-    <div class="sj-pair">
-    <div class="sj-model no-img">
-      <div>
-        <p class="series">대형 자동 · 테이블 이동방식</p>
-        <h3>CK360B</h3>
-        <div class="sj-model-video"><div class="yt"><iframe src="https://www.youtube-nocookie.com/embed/I76ZzAW4q4s" title="CK360B" loading="lazy" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe></div></div>
-        <ul class="sj-spec">
-          <li><b>모터 출력</b><span>5HP, 7.5HP</span></li>
-          <li><b>절단휠 크기</b><span>Ø305mm(12", 5HP), Ø406mm(16", 7.5HP)</span></li>
-          <li><b>Arbor Size</b><span>Ø31.75mm</span></li>
-          <li><b>X축 이동거리</b><span>360mm</span></li>
-          <li><b>Y축 이동거리</b><span>45mm</span></li>
-          <li><b>절단 속도</b><span>0~75mm/min (Min 25)</span></li>
-          <li><b>절단가능크기</b><span>Ø90(5HP), Ø120(7.5HP)</span></li>
-          <li><b>회전 속도</b><span>2500rpm(60Hz) / 2100rpm(50Hz)</span></li>
-          <li><b>장비 규격</b><span>1050 x 1180 x 1560mm</span></li>
-          <li><b>중량</b><span>454kg(5HP), 476kg(7.5HP)</span></li>
-        </ul>
+    <div class="sj-combo">
+      <p class="series">대형 자동 · 테이블 이동방식</p>
+      <h3>CK360B / CK460B</h3>
+      <div class="sj-model-video"><div class="yt"><iframe src="https://www.youtube-nocookie.com/embed/I76ZzAW4q4s" title="CK360B / CK460B" loading="lazy" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe></div></div>
+      <div class="cols">
+        <div>
+          <h4>CK360B</h4>
+          <ul class="sj-spec">
+            <li><b>모터 출력</b><span>5HP, 7.5HP</span></li>
+            <li><b>절단휠 크기</b><span>Ø305mm(12", 5HP), Ø406mm(16", 7.5HP)</span></li>
+            <li><b>Arbor Size</b><span>Ø31.75mm</span></li>
+            <li><b>X축 이동거리</b><span>360mm</span></li>
+            <li><b>Y축 이동거리</b><span>45mm</span></li>
+            <li><b>절단 속도</b><span>0~75mm/min (Min 25)</span></li>
+            <li><b>절단가능크기</b><span>Ø90(5HP), Ø120(7.5HP)</span></li>
+            <li><b>회전 속도</b><span>2500rpm(60Hz) / 2100rpm(50Hz)</span></li>
+            <li><b>장비 규격</b><span>1050 x 1180 x 1560mm</span></li>
+            <li><b>중량</b><span>454kg(5HP), 476kg(7.5HP)</span></li>
+          </ul>
+        </div>
+        <div>
+          <h4>CK460B</h4>
+          <ul class="sj-spec">
+            <li><b>모터 출력</b><span>10HP</span></li>
+            <li><b>절단휠 크기</b><span>Ø406mm(16")</span></li>
+            <li><b>Arbor Size</b><span>Ø31.75mm</span></li>
+            <li><b>X축 이동거리</b><span>460mm</span></li>
+            <li><b>Y축 이동거리</b><span>45mm</span></li>
+            <li><b>절단 속도</b><span>0~75mm/min (Min 25)</span></li>
+            <li><b>절단가능크기</b><span>최대 Ø120</span></li>
+            <li><b>회전 속도</b><span>2500rpm(60Hz) / 2100rpm(50Hz)</span></li>
+            <li><b>장비 규격</b><span>1050 x 1380 x 1550mm</span></li>
+            <li><b>중량</b><span>503kg</span></li>
+          </ul>
+        </div>
       </div>
-    </div>
-
-    <div class="sj-model no-img">
-      <div>
-        <p class="series">대형 자동 · 테이블 이동방식</p>
-        <h3>CK460B</h3>
-        <div class="sj-model-video"><div class="yt"><iframe src="https://www.youtube-nocookie.com/embed/I76ZzAW4q4s" title="CK460B" loading="lazy" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe></div></div>
-        <ul class="sj-spec">
-          <li><b>모터 출력</b><span>10HP</span></li>
-          <li><b>절단휠 크기</b><span>Ø406mm(16")</span></li>
-          <li><b>Arbor Size</b><span>Ø31.75mm</span></li>
-          <li><b>X축 이동거리</b><span>460mm</span></li>
-          <li><b>Y축 이동거리</b><span>45mm</span></li>
-          <li><b>절단 속도</b><span>0~75mm/min (Min 25)</span></li>
-          <li><b>절단가능크기</b><span>최대 Ø120</span></li>
-          <li><b>회전 속도</b><span>2500rpm(60Hz) / 2100rpm(50Hz)</span></li>
-          <li><b>장비 규격</b><span>1050 x 1380 x 1550mm</span></li>
-          <li><b>중량</b><span>503kg</span></li>
-        </ul>
-      </div>
-    </div>
     </div>
 
     <div class="sj-model">
