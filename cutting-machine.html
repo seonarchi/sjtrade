@@ -7,6 +7,16 @@
   ※ 이미지 src는 Squarespace 원본 CDN. 이전 완료 후 아임웹 업로드본으로 교체하세요.
 -->
 <div class="sj-cat">
+  <style>
+    /* 이미지 없는 모델 2개를 좌우로 나란히 (예: CF120 · CF150) */
+    .sj-cat .sj-pair { display: grid; grid-template-columns: 1fr 1fr; align-items: stretch; }
+    .sj-cat .sj-pair .sj-model { border-bottom: 1px solid var(--sj-border); }
+    .sj-cat .sj-pair .sj-model:last-child { border-left: 1px solid var(--sj-border); }
+    @media (max-width: 720px) {
+      .sj-cat .sj-pair { grid-template-columns: 1fr; }
+      .sj-cat .sj-pair .sj-model:last-child { border-left: none; }
+    }
+  </style>
 
   <!-- 서브 탭 -->
   <nav class="sj-subtab">
@@ -292,6 +302,7 @@
       </div>
     </div>
 
+    <div class="sj-pair">
     <div class="sj-model no-img">
       <div>
         <p class="series">자동 · 스핀들 이동방식</p>
@@ -324,6 +335,7 @@
           <li><b>장비 규격</b><span>1750 x 1510 x 2000mm</span></li>
         </ul>
       </div>
+    </div>
     </div>
 
     <div class="sj-model">
